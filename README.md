@@ -49,6 +49,7 @@ This repository contains an automated test suite built with **WebDriverIO** to v
 ---
 
 ## 📂 Project Structure
+```bash
 ├── specs/
 │   ├── locked_out_user.spec.js                # Test for locked_out_user login
 │   ├── performance_glitch_user.spec.js        # Test for performance_glitch_user shopping 
@@ -73,6 +74,7 @@ This repository contains an automated test suite built with **WebDriverIO** to v
 ├── wdio.conf.js             # WebdriverIO configuration file
 ├── package.json             # NPM dependencies & scripts
 └── README.md                # This README file
+```
 
 ## Prerequisites
 
@@ -93,7 +95,7 @@ Before running the tests, ensure you have the following installed:
 git clone https://github.com/nahid619/Swag-Labs-Automation-Testing.git
 cd Swag-Labs-Automation-Testing
 ```
-### Install dependencies
+### 2. Install dependencies
 ```bash
 npm install
 ```
