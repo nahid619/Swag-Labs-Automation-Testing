@@ -52,21 +52,21 @@ This repository contains an automated test suite built with **WebDriverIO** to v
 ## 📂 Project Structure
 ```bash
 ├── specs/
-│   ├── locked_out_user.spec.js                # Test for locked_out_user login
-│   ├── performance_glitch_user.spec.js        # Test for performance_glitch_user shopping 
-│   ├── standard_user.spec.js                  # Test for standard_user shopping
-│   ├── test.spec.js                           # testing file
+│   ├── locked_out_user.spec.js                # Q1 scenario Test for locked_out_user login
+│   ├── performance_glitch_user.spec.js        # Q1 scenario Test for performance_glitch_user shopping
+│   ├── standard_user.spec.js                  # Q1 scenario Test for standard_user shopping
+│   ├── test.spec.js                           # Utility testing file
 │   
 ├── test/                        
-│   ├── Q1/                     # locked_out_user-specific files
+│   ├── Q1/                     
 │   │   ├── loginActions.js      
 │   │   ├── loginObjects.js     
-│   ├── Q2/                     # standard_user-specific files
+│   ├── Q2/                   
 │   │   ├── cartActions.js         
 │   │   ├── cartObjects.js         
 │   │   ├── productActions.js      
 │   │   ├── productObjects.js      
-│   ├── Q3/                     # performance_glitch_user-specific files
+│   ├── Q3/                     
 │   │   ├── cartActions.js         
 │   │   ├── cartObjects.js        
 │   │   ├── filterActions.js       
@@ -84,8 +84,14 @@ Before running the tests, ensure you have the following installed:
 1. **Node.js** (>= 16.x)
 2. **NPM** (>= 8.x)
 3. **Microsoft Edge** (latest stable version)
-4. **java** (LTS version latest)
+4. **JAVA JDK** (LTS version latest)
 
+### Check Java installation
+```bash
+java -version
+```
+If Java is not installed, download it from: https://www.oracle.com/apac/java/technologies/downloads/#jdk21-windows
+Make sure to set the JAVA_HOME environment variable and add it to your system path.
 ---
 
 ## 🚀 Setup
@@ -99,13 +105,7 @@ cd Swag-Labs-Automation-Testing
 ```bash
 npm install
 ```
-### 3. Check if java is installed or not
-```bash
-java -version
-```
-if not install java LTS version and add to path using JAVA_HOME variables.
-
-### 4. Install Allure CLI
+### 3. Install Allure CLI
 ```bash
 npm install -g allure-commandline --save-dev
 ```
@@ -114,34 +114,43 @@ npm install -g allure-commandline --save-dev
 ## 🚀 Execution
 ### Test Credentials
 ```bash
-Username                             Password
+Username                         | Password
 -------------------------------------------------
-locked_out_user ------------------ secret_sauce
-standard_user   ------------------ secret_sauce
-performance_glitch_user ---------- secret_sauce
+locked_out_user -----------------| secret_sauce
+standard_user   -----------------| secret_sauce
+performance_glitch_user ---------| secret_sauce
 ```
 ### Run Test Scenarios
-run for locked_out_user
+Run for locked_out_user(Q1)
 ```bash
 npm run locked_out_user
 ```
-run for standard_user
+Run for standard_user(Q2)
 ```bash
 npm run standard_user
 ```
-run for performance_glitch_user
+Run for performance_glitch_user(Q3)
 ```bash
 npm run performance_user
 ```
-run for all 3 user in separate 3 browser windows
+Run for all 3 user scenarios concurrently (multi-browser)
 ```bash
 npm run wdio
 ```
-run for all 3 user in sequential manner
+Run for all 3 user scenarios in sequential manner
 ```bash
 npm run run:sequential
 ```
-generate and open allure report
+## 📊 Allure Report Generation
+After each test execution, generate and open the Allure report using:
 ```bash
 npm run allure:report
 ```
+If this command fails, ensure you’ve installed Java and Allure CLI properly.
+---
+### 📌 Notes
+- All scenarios include app state reset to maintain test independence
+- Test design follows the Page Object Model for clean separation
+- Allure and Spec reporters provide detailed and interactive test results
+- You may customize the test data or browser settings in wdio.conf.js
+---
