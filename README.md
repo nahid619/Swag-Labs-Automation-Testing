@@ -90,7 +90,7 @@ Before running the tests, ensure you have the following installed:
 ```bash
 java -version
 ```
-If Java is not installed, download it from: [JAVA_JDK_LTS_version](https://www.oracle.com/apac/java/technologies/downloads/#jdk21-windows)
+If Java is not installed, download(LTS version) it from: [JAVA_JDK](https://www.oracle.com/apac/java/technologies/downloads/#jdk21-windows)
 <br>
 Make sure to set the JAVA_HOME environment variable and add it to your system path.
 
