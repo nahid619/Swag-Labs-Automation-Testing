@@ -109,6 +109,7 @@ if not install java LTS version and add to path using JAVA_HOME variables.
 ```bash
 npm install -g allure-commandline --save-dev
 ```
+---
 
 ## 🚀 Execution
 ### Test Credentials
@@ -142,5 +143,5 @@ npm run run:sequential
 ```
 generate and open allure report
 ```bash
-npm run wdio
+npm run allure:report
 ```
