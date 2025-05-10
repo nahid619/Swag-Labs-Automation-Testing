@@ -113,10 +113,12 @@ npm install -g allure-commandline --save-dev
 ## 🚀 Execution
 ### Test Credentials
 ```bash
-Username                           Password
-locked_out_user               	 secret_sauce
-standard_user                 	 secret_sauce
-performance_glitch_user        	 secret_sauce
+Username                             Password
+-------------------------------------------------
+locked_out_user ------------------ secret_sauce
+standard_user   ------------------ secret_sauce
+performance_glitch_user ---------- secret_sauce
 ```
+
 
 
