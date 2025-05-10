@@ -58,15 +58,15 @@ This repository contains an automated test suite built with **WebDriverIO** to v
 │   ├── test.spec.js                           # testing file
 │   
 ├── test/                        
-│   ├── Q1/           # locked_out_user-specific files
+│   ├── Q1/                     # locked_out_user-specific files
 │   │   ├── loginActions.js      
 │   │   ├── loginObjects.js     
-│   ├── Q2/           # standard_user-specific files
+│   ├── Q2/                     # standard_user-specific files
 │   │   ├── cartActions.js         
 │   │   ├── cartObjects.js         
 │   │   ├── productActions.js      
 │   │   ├── productObjects.js      
-│   ├── Q3/           # performance_glitch_user-specific files
+│   ├── Q3/                     # performance_glitch_user-specific files
 │   │   ├── cartActions.js         
 │   │   ├── cartObjects.js        
 │   │   ├── filterActions.js       
