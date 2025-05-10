@@ -19,7 +19,7 @@ This repository contains an automated test suite built with **WebDriverIO** to v
   - Product prices
   - Total price
 - Complete the purchase
-- Confirm success message: _"THANK YOU FOR YOUR ORDER"_
+- Confirm success message: _"Thank you for your order!"_
 - Reset state again 
 - logout
 
@@ -33,7 +33,7 @@ This repository contains an automated test suite built with **WebDriverIO** to v
   - Product Price
   - Total Price
 - Complete the purchase
-- Confirm success message: _"THANK YOU FOR YOUR ORDER"_
+- Confirm success message: _"Thank you for your order!"_
 - Reset state again 
 - logout
 
@@ -90,7 +90,7 @@ Before running the tests, ensure you have the following installed:
 ```bash
 java -version
 ```
-If Java is not installed, download(LTS version) it from:<br> https://www.oracle.com/apac/java/technologies/downloads/#jdk21-windows
+If Java is not installed, download it from:[JAVA_JDK_LTS_version]https://www.oracle.com/apac/java/technologies/downloads/#jdk21-windows
 <br>
 Make sure to set the JAVA_HOME environment variable and add it to your system path.
 
