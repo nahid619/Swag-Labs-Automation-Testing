@@ -121,15 +121,15 @@ standard_user   -----------------| secret_sauce
 performance_glitch_user ---------| secret_sauce
 ```
 ### Run Test Scenarios
-- Run for locked_out_user(Q1)
+- Run for locked_out_user (Q1)
 ```bash
 npm run locked_out_user
 ```
-- Run for standard_user(Q2)
+- Run for standard_user (Q2)
 ```bash
 npm run standard_user
 ```
-- Run for performance_glitch_user(Q3)
+- Run for performance_glitch_user (Q3)
 ```bash
 npm run performance_user
 ```
@@ -141,6 +141,7 @@ npm run wdio
 ```bash
 npm run run:sequential
 ```
+---
 ## 📊 Allure Report Generation
 - After each test execution, generate and open the Allure report using:
 ```bash
