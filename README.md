@@ -84,10 +84,11 @@ Before running the tests, ensure you have the following installed:
 1. **Node.js** (>= 16.x)
 2. **NPM** (>= 8.x)
 3. **Microsoft Edge** (latest stable version)
+4. **java** (LTS version latest)
 
 ---
 
-## 🚀 Setup & Execution
+## 🚀 Setup
 
 ### 1. Clone the repository
 ```bash
@@ -98,3 +99,24 @@ cd Swag-Labs-Automation-Testing
 ```bash
 npm install
 ```
+### 3. Check if java is installed or not
+```bash
+java -version
+```
+if not install java LTS version and add to path using JAVA_HOME variables.
+
+### 4. Install Allure CLI
+```bash
+npm install -g allure-commandline --save-dev
+```
+
+## 🚀 Execution
+### Test Credentials
+```bash
+Username                           Password
+locked_out_user               	 secret_sauce
+standard_user                 	 secret_sauce
+performance_glitch_user        	 secret_sauce
+```
+
+
