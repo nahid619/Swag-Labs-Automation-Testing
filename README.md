@@ -91,8 +91,8 @@ Before running the tests, ensure you have the following installed:
 java -version
 ```
 If Java is not installed, download it from: https://www.oracle.com/apac/java/technologies/downloads/#jdk21-windows
+<br>
 Make sure to set the JAVA_HOME environment variable and add it to your system path.
----
 
 ## 🚀 Setup
 
