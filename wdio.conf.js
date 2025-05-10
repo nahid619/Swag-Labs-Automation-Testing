@@ -31,7 +31,7 @@ exports.config = {
     ],
 
     suites: {
-        blocked_user: [[q1]],
+        locked_user: [[q1]],
         standard_user:[[q2]],
         performance_glitch_user:[[q3]],
         run_all:[[q1,q2,q3]]

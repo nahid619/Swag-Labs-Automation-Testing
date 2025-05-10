@@ -119,6 +119,28 @@ locked_out_user ------------------ secret_sauce
 standard_user   ------------------ secret_sauce
 performance_glitch_user ---------- secret_sauce
 ```
-
-
-
+### Run Test Scenarios
+run for locked_out_user
+```bash
+npm run locked_out_user
+```
+run for standard_user
+```bash
+npm run standard_user
+```
+run for performance_glitch_user
+```bash
+npm run performance_user
+```
+run for all 3 user in separate 3 browser windows
+```bash
+npm run wdio
+```
+run for all 3 user in sequential manner
+```bash
+npm run run:sequential
+```
+generate and open allure report
+```bash
+npm run wdio
+```
