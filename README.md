@@ -90,7 +90,7 @@ Before running the tests, ensure you have the following installed:
 ```bash
 java -version
 ```
-If Java is not installed, download it from: https://www.oracle.com/apac/java/technologies/downloads/#jdk21-windows
+If Java is not installed, download(LTS version) it from:<br> https://www.oracle.com/apac/java/technologies/downloads/#jdk21-windows
 <br>
 Make sure to set the JAVA_HOME environment variable and add it to your system path.
 
@@ -121,36 +121,41 @@ standard_user   -----------------| secret_sauce
 performance_glitch_user ---------| secret_sauce
 ```
 ### Run Test Scenarios
-Run for locked_out_user(Q1)
+- Run for locked_out_user(Q1)
 ```bash
 npm run locked_out_user
 ```
-Run for standard_user(Q2)
+- Run for standard_user(Q2)
 ```bash
 npm run standard_user
 ```
-Run for performance_glitch_user(Q3)
+- Run for performance_glitch_user(Q3)
 ```bash
 npm run performance_user
 ```
-Run for all 3 user scenarios concurrently (multi-browser)
+- Run for all 3 user scenarios concurrently (multi-browser)
 ```bash
 npm run wdio
 ```
-Run for all 3 user scenarios in sequential manner
+- Run for all 3 user scenarios in sequential manner
 ```bash
 npm run run:sequential
 ```
 ## 📊 Allure Report Generation
-After each test execution, generate and open the Allure report using:
+- After each test execution, generate and open the Allure report using:
 ```bash
 npm run allure:report
 ```
 If this command fails, ensure you’ve installed Java and Allure CLI properly.
+
 ---
 ### 📌 Notes
 - All scenarios include app state reset to maintain test independence
 - Test design follows the Page Object Model for clean separation
 - Allure and Spec reporters provide detailed and interactive test results
 - You may customize the test data or browser settings in wdio.conf.js
+---
+
+Let me know if you like the project by giving it a star and following me.
+
 ---
