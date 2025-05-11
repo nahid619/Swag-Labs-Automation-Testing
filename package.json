@@ -6,9 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run ./wdio.conf.js",
     "allure:report": "allure generate allure-results --clean && allure open allure-report",
-    "locked_out_user":"wdio wdio.conf.js --suite locked_user",
-    "standard_user":"wdio wdio.conf.js --suite standard_user",
-    "performance_user":"wdio wdio.conf.js --suite performance_glitch_user",
+    "Q1":"wdio wdio.conf.js --suite locked_user",
+    "Q2":"wdio wdio.conf.js --suite standard_user",
+    "Q3":"wdio wdio.conf.js --suite performance_glitch_user",
     "run:sequential":"wdio wdio.conf.js --suite run_all"
   },
   "keywords": [],

@@ -7,6 +7,7 @@ describe('Q3 - Purchase Flow for performance_glitch_user', () => {
 
     it('Case 1: Login with performance_glitch_user', async () => {
         await login.login('performance_glitch_user', 'secret_sauce');
+          await browser.pause(1000);
     });
 
     it('Case 2: Reset App State', async () => {

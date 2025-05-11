@@ -9,6 +9,7 @@ let selectedProductsPrice = [];
 describe('Q2 - End-to-End Purchase Journey with standard_user', () => {
     it('Case 1: Should log in successfully with standard_user', async () => {
         // browser.url('/');
+        await browser.pause(1000);
         await loginActions.login('standard_user', 'secret_sauce');
     });
 

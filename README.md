@@ -123,15 +123,15 @@ performance_glitch_user ---------| secret_sauce
 ### Run Test Scenarios
 - Run for locked_out_user (Q1)
 ```bash
-npm run locked_out_user
+npm run Q1
 ```
 - Run for standard_user (Q2)
 ```bash
-npm run standard_user
+npm run Q2
 ```
 - Run for performance_glitch_user (Q3)
 ```bash
-npm run performance_user
+npm run Q3
 ```
 - Run for all 3 user scenarios concurrently (multi-browser)
 ```bash
