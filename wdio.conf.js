@@ -175,13 +175,13 @@ exports.config = {
 
 
 
-    // onPrepare: function () {
-    //     const resultsPath = path.join(__dirname, 'allure-results');
-    //     if (fs.existsSync(resultsPath)) {
-    //       fs.rmSync(resultsPath, { recursive: true, force: true });
-    //       console.log('✔️ Cleaned allure-results before test run');
-    //     }
-    //   },
+    onPrepare: function () {
+        const resultsPath = path.join(__dirname, 'allure-results');
+        if (fs.existsSync(resultsPath)) {
+          fs.rmSync(resultsPath, { recursive: true, force: true });
+          console.log('✔️ Cleaned allure-results before test run');
+        }
+      },
 
 
 
