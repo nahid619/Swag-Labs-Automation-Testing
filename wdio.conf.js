@@ -242,6 +242,7 @@ exports.config = {
         await browser.url(this.baseUrl);       
         await browser.maximizeWindow();    
     },
+    
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
