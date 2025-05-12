@@ -7,6 +7,7 @@ This repository contains an automated test suite built with **WebDriverIO** to v
 ## 📋 Assessment Scenarios
 
 ### ✅ Q1 – Locked User Login Validation 
+- Opens the website without any issue.
 - Attempt login with `locked_out_user` and Verify the error message:  
   _"Epic sadface: Sorry, this user has been locked out."_
 
