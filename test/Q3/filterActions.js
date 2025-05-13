@@ -12,6 +12,7 @@ class FilterActions {
     }
 
     async sortByNameZtoA() {
+        await filter.productSortDropdown.waitForClickable();
         await filter.productSortDropdown.selectByVisibleText('Name (Z to A)');
     }
 
@@ -21,7 +22,7 @@ class FilterActions {
         this.productName = await filter.firstProductName.getText(); 
         const priceText = await filter.firstProductPrice.getText();
         this.productPrice = parseFloat(priceText.replace('$', '').trim());
-
+        await filter.firstProductAddToCartbutton.waitForClickable();
         await filter.firstProductAddToCartbutton.click();
     }
 
