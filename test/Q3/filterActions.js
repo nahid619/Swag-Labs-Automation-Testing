@@ -6,6 +6,7 @@ class FilterActions {
     productPrice =0;
 
     async resetAppState() {
+        await filter.hamburgerMenu.waitForClickable();
         await filter.hamburgerMenu.click();
         await filter.resetAppState.click();
         await filter.closeMenu.click();
