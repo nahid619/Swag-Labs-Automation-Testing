@@ -1,8 +1,11 @@
+
 const fs = require('fs');
 const path = require('path');
 const q1='./specs/locked_out_user.spec.js';
 const q2='./specs/standard_user.spec.js';
 const q3='./specs/performance_glitch_user.spec.js';
+
+
 
 exports.config = {
     //
@@ -30,7 +33,7 @@ exports.config = {
         q1,q2,q3
     ],
 
-    suites: {
+        suites: {
         locked_user: [[q1]],
         standard_user:[[q2]],
         performance_glitch_user:[[q3]],
@@ -39,7 +42,7 @@ exports.config = {
 
     // Patterns to exclude.
     exclude: [
-        './specs/test.spec.js'
+         './specs/test.spec.js'
     ],
     //
     // ============
@@ -63,13 +66,9 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    // capabilities: [{
-    //     browserName: 'chrome'
-    // }],
     capabilities: [{
-        browserName: 'MicrosoftEdge',
+        browserName: 'chrome'
     }],
-
 
     //
     // ===================
@@ -102,7 +101,6 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-
     baseUrl: 'https://www.saucedemo.com/',
     //
     // Default timeout for all waitFor* commands.
@@ -142,9 +140,8 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: [
-        'spec',
-         ['allure', {
+    reporters: ['spec',
+                 ['allure', {
         outputDir: 'allure-results',
         disableWebdriverStepsReporting: false,
         disableWebdriverScreenshotsReporting: false,
@@ -171,18 +168,16 @@ exports.config = {
      * @param {object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      */
+    // onPrepare: function (config, capabilities) {
+    // },
 
-
-
-
-    onPrepare: function () {
+        onPrepare: function () {
         const resultsPath = path.join(__dirname, 'allure-results');
         if (fs.existsSync(resultsPath)) {
           fs.rmSync(resultsPath, { recursive: true, force: true });
           console.log('✔️ Cleaned allure-results before test run');
         }
       },
-
 
 
     /**
@@ -242,7 +237,6 @@ exports.config = {
         await browser.url(this.baseUrl);       
         await browser.maximizeWindow();    
     },
-    
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
